@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --main-bg-color: hsl(217, 54%, 11%);
+    --card-bg:hsl(216, 50%, 16%);
+    --line-color: hsl(215, 32%, 27%);
+
+}
+
+body{
+    background-color: var(--main-bg-color);
+
+}
+.main-container{
+    width: 320px;
+    height: 500px;
+    background-color: var(--card-bg);
+    margin:120px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 0 rgba(0,0,0,0.5);
+}
+.card-content{
+    padding: 20px;
+}
+.card-content .card-image img{
+    height:250px ;
+    width: 100%;
+    border-radius: 10px;
+}
+.card-content .card-image .card-image-overlay{
+    background-color: rgba(0, 255, 248, 0.5);
+    height:250px;
+    width: 280px;
+    opacity: 0;
+    border-radius: 10px;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 140px;
+
+    transition: 0.5s ease;
+
+}
+.card-content .card-image .card-image-overlay:hover{
+    cursor: pointer;
+    opacity: 1;
+}
+
+.card-info h1{
+    color: #fff;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+    padding-top: 18px;
+}
+.card-info p{
+    color: hsl(215, 51%, 70%);
+    font-family: 'Outfit', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    padding-top: 15px;
+    width:110%;
+}
+.card-info .nft-stats{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.card-info .nft-stats .stat, .card-info .nft-stats .stat-time{
+    display: flex;
+}
+.card-info .nft-stats .stat .nft-info, .card-info .nft-stats .stat-time .time-info{
+   margin-left: 5px;
+    color: hsl(0, 0%, 100%);
+}
+.card-info .nft-stats .stat .nft-info{
+    color: hsl(178, 100%, 50%);
+}
+.card-info .nft-stats .stat .nft-info:hover{
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.card-info .nft-footer{
+    display: flex;
+    padding: 10px 0;
+    border-top: 1px solid var(--line-color);
+}
+
+.card-info .nft-footer .footer-avatar img{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+.card-info .nft-footer .footer-info{
+    margin: 8px 0 0 10px;
+    color: hsl(0, 0%, 100%);
+    font-family: 'Outfit', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    }
+
+.card-info .nft-footer .footer-info span{
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+}
